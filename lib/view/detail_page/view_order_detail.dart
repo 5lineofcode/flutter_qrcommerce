@@ -51,13 +51,8 @@ class _ViewOrderDetailPageState extends State<ViewOrderDetailPage> {
         padding: EdgeInsets.all(8.0),
         child: Column(
           children: <Widget>[
-            Row(
-              children: <Widget>[
-                Text("Order ID: ${widget.document["orderId"]}"),
-                Spacer(),
-                Text("Order Date: ${widget.document["orderDate"]}"),
-              ],
-            ),
+            Text("Order ID: ${widget.document["orderId"]}"),
+            Text("Order Date: ${widget.document["orderDate"]}"),
             QrImage(
               data: widget.document["orderId"],
               size: 200.0,

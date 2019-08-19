@@ -7,6 +7,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sofco_app/_helper/page.dart';
 import 'package:sofco_app/view/detail_page/create_order.dart';
 import 'package:sofco_app/view/detail_page/view_order_detail.dart';
+import 'package:sofco_app/viewmodel/order_vm.dart';
 
 class OrderListPage extends StatefulWidget {
   @override
@@ -40,7 +41,6 @@ class _OrderListPageState extends State<OrderListPage> {
                       ? Colors.red[100]
                       : Colors.grey[100],
                   child: ListTile(
-                    // leading: Image.network(document["photo"]),
                     title: Text(document['orderId']),
                     subtitle: Text(document['orderStatus'].toString()),
                   ),
@@ -61,11 +61,8 @@ class _OrderListPageState extends State<OrderListPage> {
         actions: <Widget>[
           InkWell(
             onTap: () async {
-              // String photoScanResult = await scanner.scan();
-              // var arr = photoScanResult.split(";");
-
-              Uint8List result = await scanner.generateBarCode('https://github.com/leyan95/qrcode_scanner');
-              print(result);
+              String scannedOrderId = await scanner.scan();
+              OrderVM.loadOrderByOrderId(context, scannedOrderId);
             },
             child: Padding(
               padding: const EdgeInsets.all(8.0),

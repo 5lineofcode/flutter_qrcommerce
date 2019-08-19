@@ -117,13 +117,8 @@ class _CreateOrderPageState extends State<CreateOrderPage> {
         padding: EdgeInsets.all(8.0),
         child: Column(
           children: <Widget>[
-            Row(
-              children: <Widget>[
-                Text("Order ID: $orderId"),
-                Spacer(),
-                Text("Order Date: $orderDate"),
-              ],
-            ),
+            Text("Order ID: $orderId"),
+            Text("Order Date: $orderDate"),
             Expanded(
               child: ListView.builder(
                 itemCount: OrderVM.orderItem.length,
