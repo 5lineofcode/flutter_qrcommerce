@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "696869343211",
+    "firebase_url": "https://sofco-graha.firebaseio.com",
+    "project_id": "sofco-graha",
+    "storage_bucket": "sofco-graha.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696869343211:android:53bb07d15a3574f0",
+        "android_client_info": {
+          "package_name": "com.example.sofco_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696869343211-mafbsev9e0jlabci53eenqeg650itml1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnw1Tg8mbKcCdc7YSbH5kxJ-Ca3DAwg8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696869343211-mafbsev9e0jlabci53eenqeg650itml1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
